@@ -33,6 +33,7 @@ public class FlipkartTest {
 			
 				System.setProperty("webdriver.chrome.driver", "D:\\Installation\\chromedriver_win32 (1)\\chromedriver.exe");
 				driver = new ChromeDriver();
+				
 			
 				 
 				 
@@ -41,7 +42,7 @@ public class FlipkartTest {
 				driver.findElement(By.linkText("Login"));
 			
 				//Login functionality
-				//driver.findElement(By.xpath( "//*[@class="_2hriZF _2rbIyg"]/div/div/div/div/div//*[@type="text"]"));
+				driver.findElement(By.xpath( "//*[@class="_2hriZF _2rbIyg"]/div/div/div/div/div//*[@type="text"]"));
 				driver.findElement(By.xpath("//*[@class='IiD88i _351hSN']//*[@type='text']")).sendKeys("9483628750");
 				driver.findElement(By.xpath("//*[@class='IiD88i _351hSN']//*[@type='password']")).sendKeys("Salon@123");
 				driver.findElement(By.xpath("//*[@class='_2KpZ6l _2HKlqd _3AWRsL']")).click();
